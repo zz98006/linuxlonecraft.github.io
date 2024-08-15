@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Linuxlonestar Website</title>
+    <link rel="stylesheet" href="7.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body>
+    <main>
+      <script>
+        function close_window() {
+          if (confirm("Close Window?")) {
+            alert("Too bad")
+          }
+        }
+      </script>
+      <style>
+        body{
+          background-image:url('./w7.jpg');
+          background-attachment:fixed;
+          background-repeat: no-repeat;
+          background-size: cover;
+          body, h1, h2, h3, h4, h5, h6  {
+            font-family: "Segoe UI", Arial, sans-serif;
+          }
+        }
+      </style>
+      <!--landing page section-->
+      <div class="window active" style="max-width: 90%; min-height: 30%;">
+        <div class="title-bar">
+          <div class="title-bar-text">Linuxlonestar website</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Restore"></button>
+            <a href="javascript:close_window();">
+              <button aria-label="Close"></button>
+            </a>
+          </div>
+        </div>
+        <div class="window-body has-space">
+          <!-- this is the main body for html code-->
+
+          <section class="tabs" style="max-width: 500px">
+            <menu role="tablist" aria-label="Sample Tabs">
+              <button role="tab" aria-controls="tab-A" aria-selected="true">Welcome</button>
+              <button role="tab" aria-controls="tab-B">Support/Features, Newslist</button>
+              <button role="tab" aria-controls="tab-C">Projects</button>
+            </menu>
+            <!-- the tab content -->
+            <article role="tabpanel" id="tab-A">
+              <h4>Welcome to the linuxlonestar website</h4>
+              <b>This website serves as a portfolio for my projects, as well as a download site for things I make.<br> My Minecraft Java server is also hosted here.</b>
+              <p></p>
+              <a href="https://www.youtube.com/@linuxlonestar4796">
+                <button>YT</button>
+              </a>
+              <p></p>
+              <a href="travel.html">
+                <button>Travel</button>
+              </a>
+              <p></p>
+            </article>
+            <article role="tabpanel" id="tab-B" hidden>
+              <p></p>
+              <b>For website feature requests, email feature@linuxlonestar.com.<br><br>
+                For bug reports or questions, email support@linuxlonestar.com. <br><br>
+                To join the newslist, email news@linuxlonestar.com</b>
+              <p></p>
+            </article>
+            <article role="tabpanel" id="tab-C" hidden>
+              <h4>These are my projects.</h4>
+
+              <a href="lonebrowser.html">
+                <button>Lonebrowser</button>
+              </a>
+
+              <p>Lonebrowser is a WIP web browser for android.<br> A very improved version allowing file uploads and downloads is in development.</p>
+
+              <p></p>
+
+              <a href="https://linuxlone.onrender.com/port.html">
+                <button>Other Projects/Full Portfolio</button>
+              </a>
+
+              <p>These are some of my other projects I have made.</p>
+
+              <p></p>
+
+            </article>
+          </section>
+
+          
+  
+
+          <p></p>
+
+        </div>
+      </div>
+
+      <!--minecraft server section-->
+      <div class="window active" style="max-width: 50%; float: left;">
+        <div class="title-bar">
+          <div class="title-bar-text">Eaglecraft server</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Restore"></button>
+            <a href="javascript:close_window();">
+              <button aria-label="Close"></button>
+            </a>
+          </div>
+        </div>
+        <div class="window-body has-space">
+          <!-- this is the main body for html code-->
+          <p></p>
+
+          <h4>An eaglecraft server is hosted at eg.linuxlonecraft.cc</h4>
+          <p></p>
+          <p>Email mc@linuxlonecraft.cc for more info.</p>
+
+          <img src="mc.jpg" alt="grass block" style="max-width: 100px; max-height: 100px;">
+
+          <p></p>
+          <p></p>
+
+          <a href="mcnews.html">
+            <button>Server News</button>
+          </a>
+
+          <p></p>
+        </div>
+      </div>
+      
+      <!--chat section-->
+      <div class="window active" style="min-width: 40%; max-width: 60%; float: right;">
+        <div class="title-bar">
+          <div class="title-bar-text">Discord Server</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Restore"></button>
+            <a href="javascript:close_window();">
+              <button aria-label="Close"></button>
+            </a>
+          </div>
+        </div>
+        <div class="window-body has-space">
+          <!-- this is the main body for html code-->
+          
+          <widgetbot
+            server="1239935242857349140"
+            channel="1239935243302076560"
+            width="600px"
+            height="300px"
+          ></widgetbot>
+          <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+
+        </div>
+      </div>
+
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
